@@ -1,7 +1,13 @@
-import Connect from './components/Connect';
+import { HeroBanner } from './components';
+import ButtonsConnect from './components/ButtonsConnect';
 
 const App = () => {
-	return <div></div>;
+	return (
+		<>
+			<HeroBanner />
+			<ButtonsConnect />
+		</>
+	);
 };
 
 export default App;
