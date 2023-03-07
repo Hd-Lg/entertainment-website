@@ -1,11 +1,7 @@
 import Connect from './components/Connect';
 
 const App = () => {
-	return (
-		<div>
-			<Connect />
-		</div>
-	);
+	return <div></div>;
 };
 
 export default App;
