@@ -5,28 +5,34 @@ import './index.css';
 import { store } from './utils/redux/store';
 import { Provider } from 'react-redux';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { LayoutPage, Discover, Favorite, Profile } from './pages';
+import { Games, LayoutPage, Movies, Profile, Shows } from './pages';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
+		element: <App />,
+	},
+	{
+		path: '/home',
 		element: <LayoutPage />,
 		children: [
 			{
-				path: '/',
-				element: <App />,
+				path: 'games',
+				element: <Games />,
 			},
-			{
-				path: 'discover',
-				element: <Discover />,
-			},
-			{
-				path: 'favorite',
-				element: <Favorite />,
-			},
+
 			{
 				path: 'profile',
 				element: <Profile />,
+			},
+
+			{
+				path: 'movies',
+				element: <Movies />,
+			},
+			{
+				path: 'shows',
+				element: <Shows />,
 			},
 		],
 	},

@@ -1,6 +1,7 @@
 import LayoutPage from './LayoutPage';
-import Discover from './Discover';
-import Favorite from './Favorite';
 import Profile from './Profile';
+import Movies from './Movies';
+import Shows from './Shows';
+import Games from './Games';
 
-export { LayoutPage, Discover, Favorite, Profile };
+export { LayoutPage, Profile, Movies, Shows, Games };
