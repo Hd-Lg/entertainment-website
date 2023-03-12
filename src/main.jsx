@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import './index.css';
-import { store } from './utils/redux/store';
 import { Provider } from 'react-redux';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import App from './App';
+import './index.css';
 import { Games, LayoutPage, Movies, Profile, Shows } from './pages';
+import { store } from './utils/redux/store';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <App />,
 	},
+
 	{
 		path: '/home',
 		element: <LayoutPage />,

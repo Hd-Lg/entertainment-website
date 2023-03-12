@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import userReducer from '../../features/userSlice';
-import dataReducer from '../../features/dataSlice';
+import gameReducer from '../../features/gameSlice';
+import movieReducer from '../../features/movieSlice';
+import showReducer from '../../features/showSlice';
 
 export const store = configureStore({
 	reducer: {
-		user: userReducer,
-		data: dataReducer,
+		game: gameReducer,
+		movie: movieReducer,
+		show: showReducer,
 	},
 });

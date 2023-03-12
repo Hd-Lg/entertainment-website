@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 
+import metro from './assets/metro.png';
+import company from './assets/company_keep.jpg';
+import avatar from './assets/avatar.jpg';
+
 const App = () => {
 	return (
 		<main className='h-screen flex flex-col text-white'>
@@ -17,18 +21,27 @@ const App = () => {
 			<div className='flex bg-slate-800 justify-around relative h-[60%]'>
 				<Link
 					to={'home/games'}
-					className='bg-red-500 w-1/3 flex justify-center h-[100%]'>
-					Video Games
+					className='w-1/3 flex justify-center h-[100%] relative'>
+					<img src={metro} alt='' className='w-full h-full' />
+					<span className='absolute text-3xl top-[50%] bg-black/80 w-full text-center py-4'>
+						Video Games
+					</span>
 				</Link>
 				<Link
 					to={'home/shows'}
-					className='bg-blue-500 w-1/3 flex justify-center h-[100%]'>
-					TV Shows
+					className='w-1/3 flex justify-center h-[100%] relative'>
+					<img src={company} alt='' className='w-full h-full ' />
+					<span className='absolute text-3xl top-[50%] bg-black/80 w-full text-center py-4'>
+						TV Shows
+					</span>
 				</Link>
 				<Link
 					to={'home/movies'}
-					className=' bg-green-500 w-1/3 flex justify-center h-[100%]'>
-					Movies
+					className='w-1/3 flex justify-center h-[100%] relative'>
+					<img src={avatar} alt='' className='w-full h-full' />
+					<span className='absolute text-3xl top-[50%] bg-black/80 w-full text-center py-4'>
+						Movies
+					</span>
 				</Link>
 				<Link
 					to={'/home'}

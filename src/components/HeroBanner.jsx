@@ -1,8 +1,9 @@
-import ImgTv from '../assets/The_Company_You_Keep.jpg';
+import company from '../assets/company_keep.jpg';
+
 const HeroBanner = () => {
 	return (
 		<div className='bg-gray-900 text-white'>
-			<img src={ImgTv} alt='' className='h-[80%] w-full' />
+			<img src={company} alt='' className='h-[80%] w-full' />
 			<div className='text-center uppercase'>
 				<span>Title</span>
 				<span> | </span>
